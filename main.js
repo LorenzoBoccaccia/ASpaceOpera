@@ -1,7 +1,9 @@
 /**
  * Created by Lorenzo on 30/11/2015.
  */
-var game = new Phaser.Game(600, 400,
+
+var rec = document.getElementById('space-opera').getBoundingClientRect();
+var game = new Phaser.Game(rec.width, rec.height,
     Phaser.AUTO, 'space-opera',
     { preload: preload, create: create, update: update, render : render });
 
@@ -12,6 +14,8 @@ function preload() {
     game.load.shader('starshine', 'starshine.frag');
     game.load.shader('colonize', 'colonize.frag');
     game.load.shader('mapper', 'mapper.frag');
+
+   document.getElementById("loading").innerHTML = 'LOADING ASSETS...';
 
 }
 
@@ -61,8 +65,8 @@ function create() {
 
 
     game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-
-
+    var e = document.getElementById("loading");
+    e.parentNode.removeChild(e);
 }
 
 

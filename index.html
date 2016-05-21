@@ -28,7 +28,21 @@
     #space-opera {
         width: 100vw;
         height: calc(100vh - 88px);
+        background-color: black;
     }
+
+    #loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color:white;
+    }
+
 
 </style>
 </head>
@@ -40,7 +54,9 @@
     <div class="button right" onclick="game.galaxymap.renderXY(game.make.sprite(0, 0, 'mas'),0,0,false);">mass map</div>
 </div>
 <main id="game"></main>
+<div id="space-opera" ></div>
+<span id="loading">LOADING LIBRARIES...</span>
 <script src="phaser.js"></script>
 <script src="main.js"></script>
-<div id="space-opera" >
+</body>
 </html>
