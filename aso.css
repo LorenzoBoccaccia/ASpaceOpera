@@ -1,0 +1,60 @@
+#toolbar {
+    border-bottom: black 1px solid;
+}
+
+#toolbar * {
+    margin: 10px 20px;
+}
+
+#toolbar h3 {
+    font-style:italic;
+}
+
+
+
+#scenario {
+    text-align:center;
+}
+#scenario h3 {
+    color: gold;
+    padding: 10px;
+}
+
+#selector {
+    position: fixed;
+    bottom: 0px;
+    padding: 15px;
+    width: 100%;
+}
+#selector span {
+    color: gold;
+    padding: 5px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+#selector span:last-child {float: right;}
+
+
+
+
+#scenario h3 span {
+        cursor: pointer;
+        border: 1px gray solid;
+        padding:10px;
+        border-radius: 10px;
+}
+
+
+
+
+body {
+    background: black;
+    color: white;
+}
+* {
+    box-sizing:border-box;
+}

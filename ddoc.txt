@@ -1,0 +1,17 @@
+map1 starfield + glittering
+
+
+
+
+political map:
+
+ r=value, g=development  b=player a=unrest
+
+pfilter1: colonization
+pfilter2: unrest expansion
+pfilter3: development grow
+
+
+
+map3 r=value, g=experience b=type
+map4 r=loy g=conn b=skil
